@@ -1,0 +1,36 @@
+@use '../../Styles/color' as *;
+
+
+.heading{
+    color: $text-secondary;
+}
+
+.about-us {
+  display: flex;
+  align-items: center; /* Centrerar innehållet vertikalt */
+  gap: 2rem; /* Avstånd mellan bild och text */
+  padding: 2rem;
+  background-color: $background-secondary; /* Bakgrundsfärg för About Us-sektionen */
+  width: 75%;
+  margin: 0 auto; /* Centrerar About Us-sektionen horisontellt */
+  text-align: center;
+}
+
+.about-us-image {
+  max-width: 50%; /* Bilden tar upp halva bredden */
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-us-content {
+  max-width: 50%;
+  color: $text-secondary;
+}
+
+.about-us-content h2 {
+  margin-top: 0;
+}
+
+.about-us-content p {
+  line-height: 1.5;
+}
