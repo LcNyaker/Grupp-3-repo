@@ -5,7 +5,7 @@ import './CatOfTheWeek.scss'
 const CatOfTheWeek: React.FC = () => {
   return (
     <>
-    <section className='cat-of-the-week'>
+    <section className='cat-of-the-week' id='cat-of-the-week'>
       <h3>Veckans hetaste kissemiss</h3>
       <div className='container'>
         <img src={kjellImage} alt="En brun katt som står på ett handfat" />
