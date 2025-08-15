@@ -1,0 +1,36 @@
+@use '../../Styles/color' as *;
+
+
+.heading{
+    color: $text-secondary;
+}
+
+.races {
+  display: flex;
+  align-items: center; /* Centrerar innehållet vertikalt */
+  gap: 2rem; /* Avstånd mellan bild och text */
+  padding: 2rem;
+  background-color: $background-secondary; /* Bakgrundsfärg för About Us-sektionen */
+  width: 75%;
+  margin: 0 auto; /* Centrerar About Us-sektionen horisontellt */
+  text-align: center;
+}
+
+.races-images {
+  max-width: 50%; /* Bilden tar upp halva bredden */
+  height: auto;
+  border-radius: 8px;
+}
+
+.races-content {
+  max-width: 50%;
+  color: $text-secondary;
+}
+
+.heading h2 {
+  margin-top: 0;
+}
+
+.content-text p {
+  line-height: 1.5;
+}

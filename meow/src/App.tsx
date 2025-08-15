@@ -1,6 +1,6 @@
 import './App.css'
 import AboutUs from './components/AboutUs/AboutUs'
-import CatOfTheWeek from './components/CatOfTheWeek/CatOfTheWeek'
+import CatOfTheWeek from './components/CatOfTheWeek'
 import Footer from './components/Footer/Footer'
 import FunFacts from './components/FunFacts/FunFacts'
 import Gallery from './components/Gallery/Gallery'
