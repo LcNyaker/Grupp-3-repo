@@ -1,12 +1,26 @@
 import './Races.scss';
 import cittens from '../../assets/cittens.jpg';
 import siamese from '../../assets/siamese.jpg';
+import perser from '../../assets/perser.jpg';
+import norskskogskatt from '../../assets/norskskogskatt.jpg';
 
 const raceData = [
   {
     img: cittens,
-    alt: 'Main Coon',
-    title: 'Main Coon',
+    alt: 'Om oss',
+    title: 'Om oss',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo a lectus tempor dignissim. Nulla facilisi. Integer nec lacus sit amet odio vulputate vulputate.`
+  },
+    {
+    img: perser,
+    alt: 'Perser',
+    title: 'Perser',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo a lectus tempor dignissim. Nulla facilisi. Integer nec lacus sit amet odio vulputate vulputate.`
+  },
+    {
+    img: norskskogskatt,
+    alt: 'Norskskogskatt',
+    title: 'Norskskogskatt',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo a lectus tempor dignissim. Nulla facilisi. Integer nec lacus sit amet odio vulputate vulputate.`
   },
   {
