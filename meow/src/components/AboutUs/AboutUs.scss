@@ -11,8 +11,9 @@
   gap: 2rem; /* Avstånd mellan bild och text */
   padding: 2rem;
   background-color: $background-secondary; /* Bakgrundsfärg för About Us-sektionen */
-  width: 75%;
+  width: min(90%, 1200px);
   margin: 0 auto; /* Centrerar About Us-sektionen horisontellt */
+  margin-top: 2rem;
   text-align: center;
 }
 
