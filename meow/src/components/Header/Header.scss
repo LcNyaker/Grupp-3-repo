@@ -1,0 +1,29 @@
+@use '../../Styles/color' as *;
+
+.header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+
+  &__brand {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: $background-secondary;
+  }
+
+  &__logo {
+    
+  }
+
+  &__logo > img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
