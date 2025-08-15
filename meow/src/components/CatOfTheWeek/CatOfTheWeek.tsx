@@ -11,7 +11,9 @@ const CatOfTheWeek: React.FC = () => {
         <img src={kjellImage} alt="En brun katt som står på ett handfat" />
         <p className='cat-name'>Kjell</p>
         <p className='cat-info'>Veckans vinnare är ingen mindre än Kjell! Han har varit och nosat på toppen länge och denna veckan tog den skadeglada kattmodellen hem första priset. Kjell är en brittisk korthår som gillar korta promenader, att göra vacker tass och älskar uppmärksamhet.</p>
-        <p>Tror du att din katt har vad det krävs för att vinna veckans hetaste kissemiss? Skicka då in ditt bidrag till veckanshetastekissemiss@purrfection.se.</p>
+        <p>Tror du att din katt har vad det krävs för att vinna veckans hetaste kissemiss? Skicka då in ditt bidrag till   <a href="mailto:veckanshetastekissemiss@purrfection.se" className="email">
+        veckanshetastekissemiss@purrfection.se</a>
+        .</p>
       </div>
     </section>
     </>

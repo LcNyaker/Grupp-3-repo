@@ -2,15 +2,16 @@
 
 main {
     background-color: whitesmoke;
+    justify-content: center;
 }
 
 
 
 .cat-of-the-week {
-    width: 80%;
     justify-content: center;
     padding: 40px;
     align-items: center;
+    width: 100vw;
 
     h3 {
     color: $text-primary;
@@ -36,6 +37,15 @@ main {
         
         .cat-name {
             font-size: 2rem;
+        }
+
+        p {
+            width: 90%;
+
+            .email {
+                word-break: break-all;
+                color: white;
+            }
         }
     }
 
