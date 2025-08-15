@@ -1,27 +1,51 @@
-import './Races.scss'
+import './Races.scss';
 import cittens from '../../assets/cittens.jpg';
+import siamese from '../../assets/siamese.jpg';
+
+const raceData = [
+  {
+    img: cittens,
+    alt: 'Main Coon',
+    title: 'Main Coon',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo a lectus tempor dignissim. Nulla facilisi. Integer nec lacus sit amet odio vulputate vulputate.`
+  },
+  {
+    img: siamese,
+    alt: 'Siamese',
+    title: 'Siamese',
+    description: `Ut sed risus non orci fermentum scelerisque. Donec vel pretium risus. Morbi condimentum, sapien sed euismod fermentum.`
+  }
+];
 
 const Races = () => {
   return (
-    <>
-      <section className='races'>
-      <img className='races-images' src={cittens}
-        width="800"
-        height="602"
-        loading="lazy" alt='About Us'/>
-        <div className='races-content'>
-          <article className='content'>
-            <div className='content-heding'>
-              <h2 className="heading">Main Coon</h2>
-            </div>
-            <div className='content-text'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo a lectus tempor dignissim. Nulla facilisi. Integer nec lacus sit amet odio vulputate vulputate. Vivamus volutpat nulla non augue convallis, sed malesuada magna vestibulum. Suspendisse potenti. Phasellus interdum malesuada ante, eget sagittis justo cursus nec. Proin eu sem eget nulla feugiat bibendum at sit amet justo. Ut sed risus non orci fermentum scelerisque. Donec vel pretium risus. Morbi condimentum, sapien sed euismod fermentum, metus libero sagittis turpis, ac luctus ligula sapien vel nulla.
-                </p>
-            </div>
-          </article>
+    <section className='races' id='races'>
+      {raceData.map((race, index) => (
+        <div className='race' key={index}>
+          <div className='race-image'>
+            <img 
+              className='races-images' 
+              src={race.img} 
+              width="800" 
+              height="602" 
+              loading="lazy" 
+              alt={race.alt} 
+            />
+            <h4>{race.title}</h4>
+          </div>
+          <div className='races-content'>
+            <article className='content'>
+              <div className='content-heading'>
+                <h2 className="heading">{race.title}</h2>
+              </div>
+              <div className='content-text'>
+                <p>{race.description}</p>
+              </div>
+            </article>
+          </div>
         </div>
-      </section>
-    </>
+      ))}
+    </section>
   );
 };
 

@@ -14,6 +14,28 @@ const Header = () => {
             <p className="header__brand-byline">För alla som älskar katter</p>
           </hgroup>
         </div>
+        <nav className="nav">
+          <ul className="nav__menu">
+            <li className="nav__menu-item">
+              <a href="#about-us">Om oss</a>
+            </li>
+            <li className="nav__menu-item">
+              <a href="#races">Raser</a>
+            </li>
+            <li className="nav__menu-item">
+              <a href="#Gallery">Galleri</a>
+            </li>
+            <li className="nav__menu-item">
+              <a href="#cat-of-the-week">Veckans hetaste</a>
+            </li>
+            <li className="nav__menu-item">
+              <a href="#fun-facts">Fakta</a>
+            </li>
+            <li className="nav__menu-item">
+              <a href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );

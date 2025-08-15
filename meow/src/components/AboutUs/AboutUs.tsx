@@ -4,7 +4,7 @@ import './AboutUs.scss';
 const AboutUs = () => {
   return (
     <>
-    <section className='about-us'>
+    <section className='about-us' id='about-us'>
       <img className='about-us-image' src={cittens}
         width="800"
         height="602"

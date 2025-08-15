@@ -1,36 +1,56 @@
 @use '../../Styles/color' as *;
 
-
-.heading{
-    color: $text-secondary;
-}
-
 .races {
   display: flex;
-  align-items: center; /* Centrerar innehållet vertikalt */
-  gap: 2rem; /* Avstånd mellan bild och text */
+  flex-direction: column; /* flera race staplade vertikalt */
+  gap: 2rem;
   padding: 2rem;
-  background-color: $background-secondary; /* Bakgrundsfärg för About Us-sektionen */
-  width: 75%;
-  margin: 0 auto; /* Centrerar About Us-sektionen horisontellt */
+  background-color: $background-secondary;
+  width: min(90%, 1200px);
+  margin: 2rem auto;
   text-align: center;
-}
 
-.races-images {
-  max-width: 50%; /* Bilden tar upp halva bredden */
-  height: auto;
-  border-radius: 8px;
-}
+  .race {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 
-.races-content {
-  max-width: 50%;
-  color: $text-secondary;
-}
+    .race-image {
+      .races-images {
+        max-width: 20%; /* liknande tidigare */
+        height: auto;
+        border-radius: 8px;
+      }
 
-.heading h2 {
-  margin-top: 0;
-}
+      h4 {
+        color: $text-secondary;
+        margin-top: 0.5rem;
+      }
+    }
 
-.content-text p {
-  line-height: 1.5;
+    .races-content {
+      max-width: 80%;
+
+      .content {
+        background-color: $background-secondary; /* ändra från text-secondary */
+        padding: 1rem;
+        border-radius: 8px;
+
+        .content-heading {
+          .heading {
+            margin-top: 0;
+            color: $text-primary;
+          }
+        }
+
+        .content-text {
+          color: $text-primary;
+
+          p {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
 }
