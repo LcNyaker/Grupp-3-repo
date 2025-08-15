@@ -1,0 +1,21 @@
+@use '../../Styles/color'as *;
+
+footer {
+    background-color: $background-accent;
+    color: black;
+    position: relative;
+
+    img {
+        height: 100px;
+        width: auto;
+        position: absolute;
+        padding: 1rem;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%) rotate(20deg);
+    }
+
+    p {
+        margin: 0;
+    }
+}
