@@ -4,7 +4,7 @@ import CatOfTheWeek from './components/CatOfTheWeek'
 import Footer from './components/Footer'
 import FunFacts from './components/FunFacts'
 import Gallery from './components/Gallery'
-import Header from './components/Header'
+import { Header } from './components/Header/Header'
 import Races from './components/Races'
 
 function App() {
